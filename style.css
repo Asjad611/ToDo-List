@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(255, 230, 192);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 40vw;
+    height: 80vh;
+    background-color: rgb(240, 240, 240);
+    border-radius: 20px;
+    box-shadow: 3px 3px 50px 1px rgb(172, 172, 172);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nav{
+    width: 100%;
+    height: 20%;
+    background-color: rgb(222, 47, 82);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.date{
+    /* background-color: yellow; */
+    height: 100%;
+   display: flex;
+   width: 30%;
+   justify-content: center;
+   align-items: center;
+   color: white;
+}
+.date h1{
+    
+    font-size: 40px;
+
+
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5px;
+    /* color: white; */
+}
+.restdate{
+    margin-left: 0.5vw;
+   
+
+}
+.restdate h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+
+
+}
+.restdate h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+
+
+}
+.weekday{
+    /* background-color: yellow; */
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+ 
+}
+.weekday h2{
+    /* height: 100%;
+    width: 100%; */
+    font-size: 25px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.searchContainer{
+    width: 100%;
+    height: 15%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+.searchContainer input{
+    width: 50%;
+    height: 70%;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 20px;
+    border: 0px solid;
+}
+.searchContainer button{
+    height: 70%;
+    width: 15%;
+    /* position: absolute; */
+    color: rgb(222, 47, 82) ;
+    border: 1px solid rgb(222, 47, 82);
+    border-radius: 50px;
+    position: absolute;
+    right: 20%;
+}
+.searchContainer button i{
+    font-size: 20px;
+    
+}
+.searchContainer button:hover{
+    background-color:rgb(222, 47, 82) ;
+    color: white;
+}
+
+.btn-task{
+    position: absolute;
+    /* left: 40%;
+    bottom: 9%; */
+    width: 90px;
+    height: 90px;
+    border: 0px;
+    background-color: rgb(222, 47, 82);
+    border-radius: 50px;
+}
+.btn-task i{
+    color: white;
+    font-size:40px;
+    padding: 20px;
+    border-radius: 50px;
+    /* background-color: black; */
+    
+}
+/* .btn-task:hover{
+    background-color: white;
+    color:rgb(222, 47, 82) ;
+} */
+.btn-task i:hover{
+    background-color: white;
+    color:rgb(222, 47, 82) ;
+}
+main{
+    width: 100%;
+    height: 71%;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+main h2{
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;  
+    margin: 10px;
+    color: grey;
+    font-size: 2vw;
+    /* background-color: yellow; */
+   
+}
+.tasks {
+    width: 100%;
+    height: 85%; /* Set a fixed height (adjust based on your layout) */
+
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    padding: 10px; /* Optional: Add padding for better spacing */
+    position: relative;
+    /* background-color: black; */
+    overflow: hidden;
+}
+
+.container{
+   
+    width: 95%;
+    height: 10vh;
+    background-color: white;
+    border-radius: 50px;
+    border: 0.5px solid rgb(213, 211, 211);
+  
+    box-shadow: 2px 2px 15px 2px rgb(211, 210, 210);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(101, 101, 101);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 13px;
+  
+}
+
+.containerDonetask{
+    width: 95%;
+    height: 10vh;
+    background-color: rgb(233, 110, 135);
+    color: white;
+    border-radius: 50px;
+    border: 0.5px solid rgb(213, 211, 211);
+
+    box-shadow: 2px 2px 15px 2px rgb(211, 210, 210);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 13px;
+
+
+
+}
+.buttons{
+    width: 30%;
+    height: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 5px;
+    border-radius: 50%;
+}
+#iconTick{
+    font-size: 25px;
+}
+#iconTrash{
+    font-size: 22px;
+
+}
+
+.circle{
+    width: 50px;
+    height: 50px;
+    /* background-color: black; */
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 1px solid rgb(222, 47, 82);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(222, 47, 82);
+
+}
+
+
+.circle:hover{
+    background-color:rgb(222, 47, 82) ;
+    color: white;
+}
+
+.container p{
+    width: 70%;
+    margin-left: 15px;
+
+ 
+    overflow-x: scroll;        /* Enable horizontal scrolling */
+    scrollbar-width: none;
+
+   
+    
+}
+
+
+
+
+.containerDonetask p{
+    margin-left: 15px;
+    width: 65%;
+
+}
+/* .containerDonetask p::-webkit-scrollbar {
+    display: none;    
+}  */
+.trash{
+  font-size: 20px;
+    display: hidden;
+}
+
+@media screen and (max-width: 1000px) {
+    .card{
+        width: 90vw;
+        height: 90vh;
+        background-color: rgb(240, 240, 240);
+        border-radius: 20px;
+        box-shadow: 3px 3px 50px 1px rgb(172, 172, 172);
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 680px){
+    .date{
+        width: 40%;
+    }
+    .nav{
+        height: 15%;
+    }
+    .date h1{
+        font-size: 10vw;
+    }
+    .restdate h3{
+        font-size: 4vw;
+    }
+    .restdate h2{
+        font-size: 3.5vw;
+    }
+    .weekday h2{
+        font-size: 5vw;
+    }
+    .weekday {
+        width: 40%;
+    }
+    .searchContainer input{
+        height: 70px;
+        width: 65%;
+        font-size: 15px;
+        text-align: center;
+    }
+    .searchContainer button{
+        height: 70px;
+        width: 80px;
+        right: 12%;
+    }
+    main h2{
+        font-size: 30px;
+    }
+    .circle{
+        width: 40px;
+        height: 40px;
+    }
+    .container p{
+        overflow:auto
+    }
+    .container p{
+        width: 60%;
+    }
+    .containerDonetask p{
+        width: 60%;
+    }
+}
+@media screen and (max-height: 603px){
+    .searchContainer{
+        margin-top: 20px;
+    }
+    main h2{
+        margin-top: 20px;
+    }
+}
